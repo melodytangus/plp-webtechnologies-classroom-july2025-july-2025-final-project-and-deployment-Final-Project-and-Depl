@@ -1,0 +1,226 @@
+/* ------------------------------
+   GLOBAL STYLE
+------------------------------ */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+    font-family: "Inter", sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: "JetBrains Mono", monospace;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ------------------------------
+   NAVBAR
+------------------------------ */
+.navbar {
+    background: #111;
+    padding: 18px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.nav-brand {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.nav-menu a:hover {
+    color: #32a852;
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+
+.hero {
+    height: 350px;
+    background: url("https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=60") 
+               center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.hero .btn-primary {
+    margin-top: 18px;
+    background: #32a852;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.hero .btn-primary:hover {
+    background: #278341;
+}
+
+/* ------------------------------
+   SERVICES SECTION
+------------------------------ */
+
+.section-title {
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.service-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+/* ------------------------------
+   HOW IT WORKS
+------------------------------ */
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.step-box {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+.step-box img {
+    width: 55px;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------
+   BOOKING FORM
+------------------------------ */
+
+.booking-form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+    margin-bottom: 50px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.btn-submit {
+    background: #32a852;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-submit:hover {
+    background: #278341;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    background: #111;
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
